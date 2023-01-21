@@ -10,6 +10,10 @@ const notes10 = document.getElementById("10notes").value;
 const notes5 = document.getElementById("5notes").value;
 const notes2 = document.getElementById("2notes").value;
 const notes1 = document.getElementById("1notes").value;
+const amountPay = document.getElementById("amountPayable").value;
+const balTxt = document.getElementById("balance");
+const res = document.getElementById("reset");
+
 
     var count2k = notes2k*2000; 
     var count500 = notes500*500;
@@ -24,8 +28,12 @@ const notes1 = document.getElementById("1notes").value;
 
     var total = count2k + count500 + count200 + count100 + count50 + count20 + count10 + count5 + count2 + count1;
 
-    /*console.log(total));*/
+    totalTxt.innerText = "Total : " + + total;
 
-    totalTxt.innerText = total;
+    var balance = total - amountPay;
+    balTxt.innerHTML = "Balance : " + + balance;
+    if(balance<0){
+        balTxt.style.display ="none";
+    };
+    
 };
-

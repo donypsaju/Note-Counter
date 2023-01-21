@@ -26,35 +26,38 @@
     <div class="counter_content container-fluid col-6 bg-primary text-light col">
       <div class="2000_notes col">
         <form>
-          <div class="mb-3 container-fluid">
+          <div class="mb-3 container-fluid justify-content-center align-items-center text-center">
+            <label for="exampleInputEmail1" class="form-label col-3"><p class="h6">Amount Payable</p></label>
+            <input type="number" min="0" onkeyup="countFunction()" class="form-control text-dark text-center col" id="amountPayable">
+          </div>
+          <div class="mb-3 container-fluid justify-content-center align-items-center text-center">
             <label for="exampleInputEmail1" class="form-label col-3"><p class="h6">2000'S</p></label>
             <input type="number" min="0" onkeyup="countFunction()" class="form-control text-dark text-center col" id="2000notes">
-          </div>
-          <div class="mb-3 container-fluid">
+          
             <label for="exampleInputEmail1" class="form-label col-3"><p class="h6">500'S</p></label>
             <input type="number" min="0" onkeyup="countFunction()"  class="form-control text-dark text-center col" id="500notes">
+          
           </div>
-          <div class="mb-3 container-fluid">
+          <div class="mb-3 container-fluid justify-content-center align-items-center text-center">
             <label for="exampleInputEmail1" class="form-label col-3"><p class="h6">200'S</p></label>
             <input type="number" min="0" onkeyup="countFunction()"  class="form-control text-dark text-center col" id="200notes">
-          </div>
-          <div class="mb-3 container-fluid">
+            
             <label for="exampleInputEmail1" class="form-label col-3"><p class="h6">100'S</p></label>
             <input type="number" min="0" onkeyup="countFunction()"  class="form-control text-dark text-center col" id="100notes">
+          
           </div>
-          <div class="mb-3 container-fluid">
+          <div class="mb-3 container-fluid justify-content-center align-items-center text-center">
             <label for="exampleInputEmail1" class="form-label col-3"><p class="h6">50'S</p></label>
             <input type="number" min="0" onkeyup="countFunction()"  class="form-control text-dark text-center col" id="50notes">
-          </div>
-          <div class="mb-3 container-fluid">
+          
             <label for="exampleInputEmail1" class="form-label col-3"><p class="h6">20'S</p></label>
             <input type="number" min="0" onkeyup="countFunction()"  class="form-control text-dark text-center col" id="20notes">
+          
           </div>
-          <div class="mb-3 container-fluid">
+          <div class="paisa mb-3 container-fluid justify-content-center align-items-center text-center text-center flex-center align-center">
             <label for="exampleInputEmail1" class="form-label col-3"><p class="h6">10'S</p></label>
             <input type="number" min="0" onkeyup="countFunction()"  class="form-control text-dark text-center col" id="10notes">
-          </div>
-          <div class="paisa mb-3 container-fluid text-center flex-center align-center">
+          
             <label for="exampleInputEmail1" class="form-label col"><p class="h6">05'S</p></label>
             <input type="number" min="0" onkeyup="countFunction()"  class="form-control container-fluid text-dark text-center col" id="5notes">
             <label for="exampleInputEmail1" class="form-label col"><p class="h6">02'S</p></label>
@@ -64,9 +67,11 @@
           </div>
           <div class="container text-center flex-center align-center">
             <p class="h1 text-center text-white text-center" id="total"></p>
+            <p class="h1 text-center text-white text-center" id="balance"></p>
+
           </div>
           <div class="container text-center flex-center align-center">
-            <button type="reset" class="btn btn-outline-warning">Reset</button>
+            <button type="reset" class="btn btn-outline-warning" onclick="reset()" id="reset">Reset</button>
           </div>
         </form>
       </div>
