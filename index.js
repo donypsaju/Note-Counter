@@ -12,7 +12,6 @@ const notes2 = document.getElementById("2notes").value;
 const notes1 = document.getElementById("1notes").value;
 const amountPay = document.getElementById("amountPayable").value;
 const balTxt = document.getElementById("balance");
-const res = document.getElementById("reset");
 
 
     var count2k = notes2k*2000; 
@@ -32,8 +31,8 @@ const res = document.getElementById("reset");
 
     var balance = total - amountPay;
     balTxt.innerHTML = "Balance : " + + balance;
-    if(balance<0){
-        balTxt.style.display ="none";
-    };
+    //if(balance<0){
+    //    balTxt.style.display ="none";
+   // };
     
 };
